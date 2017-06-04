@@ -1,10 +1,11 @@
-#include <gl/glew.h>
-#include <gl//freeglut.h>
-#include <gl/GL.h>
-#include <glm\glm.hpp>
-#include <glm\ext.hpp>
-#include <glm\gtx\string_cast.hpp>
-#include <glm\gtc\type_ptr.hpp>
+#include <Windows.h>
+#include "gl/glew.h"
+#include "gl//freeglut.h"
+#include "gl/GL.h"
+#include "gl/glm\glm.hpp"
+#include "gl/glm\ext.hpp"
+#include "gl/glm/gtx/string_cast.hpp"
+#include "gl/glm/gtc/type_ptr.hpp"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -666,8 +667,8 @@ void render(){
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
 	//--------------------------------------------------------------------------------------
 	// Gaussian Blur textures
-	Screen sunScreen = Screen{ SUN_WIDTH, SUN_HEIGHT, SUN_WIDTH / SUN_HEIGHT };
-	Screen anamorphicScreen = Screen{ ANAMORPHIC_WIDTH, ANAMORPHIC_HEIGHT, ANAMORPHIC_WIDTH / ANAMORPHIC_HEIGHT };
+	Screen sunScreen = Screen{ (GLuint)SUN_WIDTH, (GLuint)SUN_HEIGHT, (GLfloat)(SUN_WIDTH / SUN_HEIGHT) };
+	Screen anamorphicScreen = Screen{ (GLuint)ANAMORPHIC_WIDTH, (GLuint)ANAMORPHIC_HEIGHT, ANAMORPHIC_WIDTH / ANAMORPHIC_HEIGHT };
 	renderBlurTexture(blur_program, "sunColorTexture", "blur16ColorTexture", 16, sunScreen);
 	renderBlurTexture(blur_program, "sunColorTexture", "blur24ColorTexture", 24, sunScreen);
 	renderBlurTexture(blur_program, "sunColorTexture", "blur32ColorTexture", 32, sunScreen);

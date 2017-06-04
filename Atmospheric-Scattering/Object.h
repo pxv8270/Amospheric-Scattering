@@ -3,9 +3,10 @@
 #ifndef _OBJECT_H_
 #define _OBJECT_H_
 
-#include <gl/glew.h>
-#include <gl/GL.h>
-#include <SOIL.h>
+#include <Windows.h>
+#include "gl/glew.h"
+#include "gl/GL.h"
+#include "gl/soil/SOIL.h"
 #include <iostream>
 #include <vector>
 #include <set>
@@ -14,10 +15,10 @@
 #include <fstream>
 #include <cmath>
 
-#include <glm\glm.hpp>
-#include <glm\gtx\transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
-#include <glm\gtc\matrix_transform.hpp>
+#include "gl\glm\glm.hpp"
+#include "gl\glm\gtx\transform.hpp"
+#include "gl\glm\gtc\type_ptr.hpp"
+#include "gl\glm\gtc\matrix_transform.hpp"
 
 #include "Vec3.h"
 #include "camera.h"

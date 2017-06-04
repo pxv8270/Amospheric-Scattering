@@ -5,7 +5,7 @@
 
 #include <iostream>
 #include <cassert>
-#include <glm\glm.hpp>
+#include "gl/glm/glm.hpp"
 
 #define PI 3.14159
 
@@ -244,7 +244,7 @@ typedef Vec3<float> Vec3f;
 #pragma warning( disable : 4715)
 //comparator for the 3d vector
 struct Vec3Comp{
-	bool operator()(const Vec3f& v1, const Vec3f& v2){
+	bool operator()(const Vec3f& v1, const Vec3f& v2) const {
 		if (v1.x < v2.x){
 			return true;
 		}

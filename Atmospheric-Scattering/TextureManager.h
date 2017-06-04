@@ -3,10 +3,11 @@
 #ifndef _TEXTUREMANAGER_H_
 #define _TEXTUREMANAGER_H_
 
-#include <gl/glew.h>
-#include <gl/GL.h>
-#include <SOIL.h>
-#include <stb_image_aug.h>
+#include <Windows.h>
+#include "gl/glew.h"
+#include "gl/GL.h"
+#include "gl/soil/SOIL.h"
+#include "gl/soil/stb_image_aug.h"
 
 #include <algorithm>
 #include <iostream>
