@@ -3,15 +3,17 @@
 #ifndef _CAMERA_H_
 #define _CAMERA_H_
 
-#include <gl/glew.h>
-#include <gl/freeglut.h>
-#include <gl/GL.h>
+#include <Windows.h>
+#include "gl/glew.h"
+#include "gl/freeglut.h"
+#include "gl/GL.h"
+#include "gl/glm\glm.hpp"
+#include "gl/glm\ext.hpp"
+#include "gl/glm/gtx/string_cast.hpp"
+#include "gl/glm/gtx/transform.hpp"
+#include "gl/glm/gtc/type_ptr.hpp"
+#include "gl/GL.h"
 #include <iostream>
-#include <glm\glm.hpp>
-#include <glm\gtx\transform.hpp>
-#include <glm\gtc\type_ptr.hpp>
-#include <glm\ext.hpp>
-#include <glm\gtx\string_cast.hpp>
 
 
 
